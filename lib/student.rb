@@ -42,7 +42,7 @@ class Student
   end
 
   def self.create(name:, grade:)
-    s1 = Student.new('Sally', '10th')
+    s1 = Student.new("Sally", "10th")
     s1.save
     s1
   end

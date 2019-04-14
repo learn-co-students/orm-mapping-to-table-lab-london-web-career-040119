@@ -62,10 +62,10 @@ describe "Student" do
       expect(DB[:conn].execute("SELECT * FROM students")).to eq([[1, "Sally", "10th"]])
     end
     it 'returns the new object that it instantiated' do
-      student = Student.create(name: "Josh", grade: "9th")
+      student = Student.create(name: "Sally", grade: "10th")
       expect(student).to be_a(Student)
-      expect(student.name).to eq("Josh")
-      expect(student.grade).to eq("9th")
+      expect(student.name).to eq("Sally")
+      expect(student.grade).to eq("10th")
     end
   end
 end
